@@ -10,15 +10,15 @@
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PNGV780VZ"></script>
    <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
       gtag('config', 'G-8PNGV780VZ');
    </script>
    <!-- favicon -->
-   <link rel="icon" href="image/icon(1000).png" sizes="1000x1000" type="image/png"/>
-   <link rel="icon" href="image/icon(500).png" sizes="500x500" type="image/png"/>
-   <link rel="icon" href="image/icon(250).png" sizes="250x250" type="image/png"/>
-   <link rel="icon" href="image/icon(100).png" sizes="100x100" type="image/png"/>
+   <link rel="icon" href="image/icon(1000).png" sizes="1000x1000" type="image/png" />
+   <link rel="icon" href="image/icon(500).png" sizes="500x500" type="image/png" />
+   <link rel="icon" href="image/icon(250).png" sizes="250x250" type="image/png" />
+   <link rel="icon" href="image/icon(100).png" sizes="100x100" type="image/png" />
    <!-- OG -->
    <meta property="og:title" content="Leaf Web">
    <meta property="og:url" content="https://leafweb.github.io/">
@@ -30,15 +30,38 @@
    <meta property="og:description" content="Learn about 13 features that set Ahrefs apart from the competition.">
    <!-- style -->
    <link rel="stylesheet" href="style/style.css">
+   <link rel="stylesheet" href="font-awesome/css/all.css">
 </head>
 <body>
    <header>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div id="icon"><img src="image/leaf-white.svg"></div>
+      <div id="title">
+         <div>Leaf web</div>
+      </div>
    </header>
-   <center>
-      <h1>سلام 👋</h1>
-   </center>
+   <main>
+      <div id="welcome">
+         <img src="image/leaf.svg">
+         <p>Welcome</p>
+         <p>به وب برگ خوش آمدید</p>
+      </div>
+      <div class="crimson">
+         <p>پروژه های وب برگ: </p>
+         <section>
+            <div onclick="window.open('janbot','_self')">
+               <img src="janbot/image/robot.svg">
+               <p>Jan bot</p>
+            </div>
+            <div onclick="window.open('leafmusic','_self')">
+               <img src="leafmusic/image/leafmusic.svg">
+               <p>Leaf music</p>
+            </div>
+         </section> 
+      </div>
+   </main>
+   <aside>
+   <footer>
+      <div></div>
+   </footer>
 </body>
 </html>
