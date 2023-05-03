@@ -10,6 +10,7 @@
 *::selection{
    background: crimson;
    color: #fff;
+   caret-color: white;
 }
 body{
    margin: 0;
