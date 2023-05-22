@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
    <defs>
       <linearGradient id="G0" x1="1000" y1="0" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
-         <stop offset="30%" stop-color="hsl(0 , 100%,  50%)" />
-         <stop offset="70%" stop-color="hsl(300,  100%,  50%)" />
+         <stop offset="30%" stop-color="hsl(140,100%,50%)"/>
+         <stop offset="70%" stop-color="hsl(120,100%,30%)"/>
       </linearGradient>
-      <radialgradient id="G1">
-         <stop offset="0%" stop-color="hsl(330,  100%,  10%)" />
-         <stop offset="100%" stop-color="#000" />
-      </radialgradient>
+      <radialGradient id="G1" cx="50%" cy="50%" r="50%">
+         <stop offset="0%" stop-color="hsl(130,100%,10%)" />
+         <stop offset="100%" stop-color="#000"/>
+      </radialGradient>
    </defs>
    <rect x="0" y="0" width="1000" height="1000" rx="300" fill="url(#G1)" />
    <g fill="url(#G0)" transform="translate(0,50)">
@@ -15,4 +15,5 @@
       <path d="M 500 700 C 200 700 350 300 500 100 C 650 300 800 700 500 700z" />
       <path d="M 480 680 L 520 680 Q 520 860 400 800 C 460 820 480 820 480 680z" />
    </g>
+   <path fill="none" stroke="#070" stroke-width="20" stroke-linecap="round" d="M 350 600 C 450 700 550 700 650 600"/>
 </svg>

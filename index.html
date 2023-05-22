@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
    <title>Leaf web</title>
    <meta charset="UTF-8">
@@ -14,53 +15,52 @@
       gtag('js', new Date());
       gtag('config', 'G-8PNGV780VZ');
    </script>
-   <!-- favicon -->
-   <link rel="icon" href="image/icon(1000).png" sizes="1000x1000" type="image/png" />
-   <link rel="icon" href="image/icon(500).png" sizes="500x500" type="image/png" />
-   <link rel="icon" href="image/icon(250).png" sizes="250x250" type="image/png" />
-   <link rel="icon" href="image/icon(100).png" sizes="100x100" type="image/png" />
-   <!-- OG -->
-   <meta property="og:title" content="Leaf Web">
-   <meta property="og:url" content="https://leafweb.github.io/">
-   <meta property="og:image" content="https://leafweb.github.io/image/caver.png">
-   <meta property="og:image:width" content="500" />
-   <meta property="og:image:height" content="500" />
-   <meta property="og:type" content="website">
-   <meta property="og:locale" content="fa_IR">
-   <meta property="og:description" content="Projects of Leaf web">
    <!-- style -->
-   <link rel="stylesheet" href="style/style.css">
-   <link rel="stylesheet" href="font-awesome/css/all.css">
+   <link id="theme" rel="stylesheet" href="theme/light.css">
+   <link rel="stylesheet/less" href="style/style.less">
+   <script src="script/less.min.js"></script>
 </head>
 <body>
    <header>
-      <div id="icon"><img src="image/leaf-white.svg"></div>
-      <div id="title">
-         <div>Leaf web</div>
-      </div>
+      <div id="toggle-theme"><i class="fad fa-moon-over-sun"></i></div>
+      <div id="title">Leaf web</div>
+      <div id="menu-bars"><i class="fad fa-bars"></i></div>
    </header>
    <main>
-      <div id="welcome">
-         <img src="image/leaf.svg">
-      </div>
-      <div class="crimson">
+      <div>
+         <div class="welcome">
+            <div>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                  <path fill="currentColor" transform="translate(0,50)" d="M 500 700 C 300 700 200 500 50 400 C 250 350 400 400 500 600 C 600 400 750 350 950 400 C 800 500 700 700 500 700z M 500 700 C 200 700 350 300 500 100 C 650 300 800 700 500 700z M 480 680 L 520 680 Q 520 860 400 800 C 460 820 480 820 480 680z" />
+               </svg>
+            </div>
+            <p>در اینجا راحت به برنامه‌نویسی وب تبدیل شوید</p>
+         </div>
          <hr>
-         <section>
-            <div onclick="window.open('https://leafweb.github.io/janbot','_self')">
-               <img src="https://leafweb.github.io/janbot/image/robot.svg">
-               <p>Jan bot</p>
-            </div>
-            <div onclick="window.open('https://leafweb.github.io/leafmusic','_self')">
-               <img src="https://leafweb.github.io/leafmusic/image/leafmusic.svg">
-               <p>Leaf music</p>
-            </div>
-         </section> 
+         <p>
+            برنامه نویسی وب دو شاخه خیلی مهم داره
+            <br>
+            <li>فرانت-اِند: برنامه‌نویسی از سمت کاربر</li>
+            <br>
+            <li>بک-اِاند: برنامه‌نویسی از سمت سرور</li>
+            <br>
+            شما میتوانید در وب برگ، برنامه‌نویسی از سمت کاربر را کامل یاد بگیرید.
+            <br>
+            همین الان شروع کنید:
+         </p>
+         <a class="full-btn" href="lessons/HTML">HTML</a>
+         <a class="full-btn">CSS</a>
+         <a class="full-btn">JavaScript</a>
+         <a class="full-btn">LESS</a>
+         <a class="full-btn">SVG</a>
       </div>
    </main>
    <footer>
-      <div class="crimson">
-         <p><i class="far fa-copyright"> 2 0 23</i></p>
-      </div>
+      <center>
+         <p>استفاده از مطالب این سایت با ذکر منبع بلامانع است </p>
+         <p dir="ltr"><i class="fad fa-copyright"></i> 2023</p>
+      </center>
    </footer>
+   <script src="script/main.js"></script>
 </body>
 </html>

@@ -14632,8 +14632,8 @@ readers do not read off random characters that represent icons */
 .fad::before,
 .fa-duotone::before {
   position: absolute;
-  color: var(--fa-primary-color, inherit);
-  opacity: var(--fa-primary-opacity, 1); }
+  color: var(--fa-clr-color, inherit);
+  opacity: var(--fa-clr-opacity, 1); }
 
 .fad::after,
 .fa-duotone::after {
@@ -14650,7 +14650,7 @@ readers do not read off random characters that represent icons */
 .fa-swap-opacity .fa-duotone::after,
 .fad.fa-swap-opacity::after,
 .fa-duotone.fa-swap-opacity::after {
-  opacity: var(--fa-primary-opacity, 1); }
+  opacity: var(--fa-clr-opacity, 1); }
 
 .fad.fa-inverse,
 .fa-duotone.fa-inverse {

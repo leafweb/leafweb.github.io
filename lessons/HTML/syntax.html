@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+   <title>Leaf web</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="google-site-verification" content="fwmMk6czaeuG-_CQ7C03tM-hjA8iBFj9-kSihrEXS3Q">
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PNGV780VZ"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-8PNGV780VZ');
+   </script>
+   <!-- style -->
+   <link id="theme" rel="stylesheet" href="theme/light.css">
+   <link rel="stylesheet/less" href="../../style/style.less">
+   <script src="../../script/less.min.js"></script>
+</head>
+
+<body>
+   <header>
+      <div id="toggle-theme"><i class="fad fa-moon-over-sun"></i></div>
+      <div id="title">Leaf web</div>
+      <div id="menu-bars"><i class="fad fa-bars"></i></div>
+   </header>
+   <main>
+      <div>
+         <article>
+            <h2>
+               <li>نحو HTML</li>
+            </h2>
+            <p>
+               مانند همه زبان ها برنامه نویسی، این زبان هم قواننید خودشو داده که به ان نحو یا
+               <mark>syntax</mark>
+               میگویند.
+               نحو HTML بسیار ساده است.
+            </p>
+            <p>
+               در زبان HTML کلی عناصر یا
+               <mark>element</mark>
+               وجود دارد.
+            </p>
+            <p>
+               برای مثال به این کد توجه کنید!
+            </p>
+            <pre lang="html">
+&lt;p> یک پاراگراف &lt;/p></pre>
+            <p>
+               آنچه که بین کمانک ها
+               <mark dir="ltr">
+                  <>
+               </mark>
+               هستش، تگ
+               <mark>tag</mark>
+               نام دارد.
+               وظیفه تگ ها مشخص کردن نقطه شروع و پایان عنصر ها هستند.
+               <br>
+               تگ ها
+               <b>معمولاً</b>
+               جفت هستند.
+               <br>
+               <br>
+               تگ شروع: <mark dir="ltr">&lt;p&gt;</mark>
+               <br>
+               <br>
+               تگ پایان: <mark dir="ltr">&lt;/p&gt;</mark>
+               <br>
+               <br>
+            </p>
+            <p class="panel">
+               به این دو تگ و هر چیزی که بین آنها قرار بگیرد، یک عنصر یا <mark>element</mark> میگویند
+            </p>
+            <p class="panel">هنگام خروجی گرفتن این کد فقط متن درون تگ را نمایش میدهند و خوده تگ را نمایش نمی دهد </p>
+         </article>
+         <br>
+         <article>
+            <h2>
+               <li>عنصر ها میتوانند فرزند داشته باشند!</li>
+            </h2>
+            <p>به کد زیر دقت کنید: </p>
+            <pre lang="html">
+&lt;body>
+   &lt;header> سرتیتر &lt;/header>
+   &lt;main> محتوای اصلی &lt;/main>
+&lt;/body></pre>
+            <p>
+               همانطور که در کد بالا مشاهده میکنید، عنصر
+               <mark>body</mark>
+               دو فرزند دارد.
+            </p>
+            <p class="warn-panel">تگ شروع و پایان فرزندان را هردو در عنصر پدر بگذارید!</p>
+            <p>نمونه ای از یک نحو غلط: </p>
+            <pre lang="html">
+&lt;main>
+   &lt;p>
+&lt;/main>
+   &lt;/p></pre>
+            <p>
+               نگران این کد های غریبه نباشید. با آنها آشنا خواهید شد.
+            </p>
+         </article>
+         <br>
+         <article>
+            <h2>
+               <li>ویژگی‌ها</li>
+            </h2>
+            <p>
+               به کد زیر نگاه کنید و مکان قرارگیری ویژگی ها یا
+               <mark>attribute</mark>
+               را به ذهن بسپارید:
+            </p>
+            <pre lang="html">
+&lt;main>
+   &lt;p id="first-text" class="text"> یه متنی &lt;/p>
+   &lt;p class="text"> یه متنی &lt;/p>
+   &lt;p class="text"> یه متنی &lt;/p>
+   &lt;p class="text"> یه متنی &lt;/p>
+&lt;/main></pre>
+            <p>
+               <mark>id</mark>
+               و <mark>class</mark>
+               ویژگی های این عناصر هستند.
+               در زبان HTML ویژگی های زیادی وجود دارد که با آنها هم آشنا خواهیم شد.
+            </p>
+         </article>
+         <br>
+         <article>
+            <h2>
+               <li>کامنت ها</li>
+            </h2>
+            <pre lang="html">
+&lt;main>
+   &lt;!-- متن اصلی -->
+   &lt;p> سلام &lt;/p>
+   &lt;!-- &lt;p> این اولین وبسایت من هستش &lt;/p> -->
+&lt;/main></pre>
+            <p>
+               کامند ها متن هایی در کد هستتند که اجرا نمیشود
+               <br>
+               مثلاً در کد بالا اون قسمت‌های خاکستری اجرا نمیشود
+               <br>
+               هر چیزی که بین
+               <mark>&lt;!--</mark>
+               و 
+               <mark>--></mark>
+               قرار بگیرد اجرا نمیشود
+            </p>
+         </article>
+         <br>
+         <article>
+            <h2>
+               <li>برخی از عناصر تگ پایانی ندارند!</li>
+            </h2>
+            <p>
+               عناصری مانند
+               <mark>meta</mark> و
+               <mark>link</mark> و
+               <mark>br</mark> و
+               <mark>hr</mark> و
+               <mark>img</mark> و
+               <mark>input</mark>
+               تگ پایانی ندارد.
+               پس نیازی نیست برای این عناصر تگ پایانی بزارید
+            </p>
+            <pre lang="html">
+&lt;main>
+   &lt;img src="image.png" alt="image">
+   &lt;br>
+   &lt;input type="text">
+&lt;/main></pre>
+         </article>
+         <hr>
+         <p>
+            به همین سادگی با نحو HTML آشنا شدید.
+         </p>
+         <p>در آموزش بعد یاد میگیرید که چطور یه سند وب معتبر و خوانا برای مرورگر ها بسازید</p>
+         <a href="document.html" class="flex flex-left btn">
+            <div> <i class="fad fa-arrow-right"></i> سند معتبر HTML</div>
+         </a>
+      </div>
+   </main>
+   <footer>
+      <center>
+         <p>استفاده از مطالب این سایت با ذکر منبع بلامانع است </p>
+         <p dir="ltr"><i class="fad fa-copyright"></i> 2023</p>
+      </center>
+   </footer>
+   <script src="../../script/main.js"></script>
+   <script src="../../script/w3CodeColor.js"></script>
+</body>
+
+</html>
