@@ -16,6 +16,7 @@ function setTheme(tx) {
 function getTheme() {
    if (localStorage.getItem('theme') == undefined) {
       localStorage.setItem('theme', 'light');
+      theme.setAttribute('href', '/theme/' + tx + '.css')
    } else {
       theme.setAttribute('href', '/theme/' + localStorage.getItem('theme') + '.css');
    }
