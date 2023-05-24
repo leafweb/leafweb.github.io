@@ -7,7 +7,8 @@ function allDoc(x) {
 const html = doc('html');
 const body = doc('body');
 const header = doc('header');
-const main = doc('main');
+const aside = doc('aside');
+const footer = doc('footer');
 const theme = doc('#theme');
 
 function setTheme(tx) {
@@ -23,6 +24,8 @@ function getTheme() {
    }
 }
 getTheme();
+
+
 
 fetch('/data/header.xml')
 .then(x => x.text())
@@ -42,17 +45,17 @@ fetch('/data/header.xml')
       doc('#backdrop').classList.toggle('on');
    }
 })
-.catch(e=>{
+.catch(()=>{
    header.innerHTML = '<div class="fad fa-exclamation-triangle"></div><div>Error</div><div class="fad fa-exclamation-triangle"></div>';
 })
-   
+ 
+ fetch('/data/aside.xml')
+.then(x => x.text())
+.then(y => aside.innerHTML = y);
+
 fetch('/data/footer.xml')
 .then(x => x.text())
-.then(y=> doc('footer').innerHTML = y);
-
-fetch('/data/aside.xml')
-.then(x => x.text())
-.then(y=> doc('aside').innerHTML = y);
+.then(y=> footer.innerHTML = y);
 
 //run
 allDoc('run').forEach(x => {
