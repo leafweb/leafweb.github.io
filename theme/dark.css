@@ -1,5 +1,5 @@
 :root {
-   --primary: hsla(140, 70%, 60%, 1);
+   --primary: hsla(140, 70%, 50%, 1);
    --primary-opacity: hsla(140, 100%, 60%, 0.5);
    --on-primary: #000;
    --primary-low: hsla(140, 100%, 15%, 1);
@@ -7,7 +7,7 @@
    --primary-high: hsla(140, 100%, 15%, 1);
    --on-primary-high: hsla(140, 100%, 80%, 1);
    
-   --secondary: hsla(180, 70%, 60%, 1);
+   --secondary: hsla(180, 70%, 50%, 1);
    --secondary-opacity: hsla(180, 70%, 50%, 0.5);
    --on-secondary: hsla(180, 100%, 10%, 1);
    --secondary-low: hsla(180, 100%, 15%, 1);
@@ -15,7 +15,7 @@
    --secondary-high: hsla(180, 100%, 15%, 1);
    --on-secondary-high: hsla(180, 100%, 80%, 1);
    
-   --error: hsla(0, 70%, 60%, 1);
+   --error: hsla(0, 70%, 50%, 1);
    --error-opacity: hsla(0, 70%, 50%, 0.5);
    --on-error: hsla(0, 100%, 10%, 1);
    --error-low: hsla(0, 100%, 15%, 1);
@@ -23,7 +23,7 @@
    --error-high: hsla(0, 100%, 15%, 1);
    --on-error-high: hsla(0, 100%, 80%, 1);
    
-   --warn: hsla(50, 100%, 60%, 1);
+   --warn: hsla(50, 100%, 50%, 1);
    --warn-opacity: hsla(50, 70%, 50%, 0.5);
    --on-warn: hsla(50, 100%, 10%, 1);
    --warn-low: hsla(50, 100%, 15%, 1);
@@ -31,6 +31,7 @@
    --warn-high: hsla(50, 100%, 15%, 1);
    --on-warn-high: hsla(50, 100%, 80%, 1);
    
-   --background: hsla(160, 100%, 5%, 1);
-   --on-background: hsla(160, 90%, 80%, 1);
+   --backdrop: hsla(140, 100%, 90%, 0.2);
+   --background: hsla(140, 100%, 5%, 1);
+   --on-background: hsla(140, 90%, 80%, 1);
 }
