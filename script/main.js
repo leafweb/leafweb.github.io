@@ -1,6 +1,9 @@
 function doc(x) {
    return document.querySelector(x);
 }
+function allDoc(x) {
+   return document.querySelectorAll(x);
+}
 const html = doc('html');
 const body = doc('body');
 const header = doc('header');
@@ -23,7 +26,7 @@ getTheme();
 
 fetch('/data/header.xml')
 .then(x => x.text())
-.then(y => doc('header').innerHTML = y)
+.then(y => header.innerHTML = y)
 .then(() =>{
    doc('#toggle-theme').onclick = () => {
       if (localStorage.getItem('theme') == 'light') {
@@ -38,7 +41,10 @@ fetch('/data/header.xml')
    doc('#backdrop').onclick = () => {
       doc('#backdrop').classList.toggle('on');
    }
-});
+})
+.catch(e=>{
+   header.innerHTML = '<div class="fad fa-exclamation-triangle"></div><div>Error</div><div class="fad fa-exclamation-triangle"></div>';
+})
    
 fetch('/data/footer.xml')
 .then(x => x.text())
@@ -49,7 +55,7 @@ fetch('/data/aside.xml')
 .then(y=> doc('aside').innerHTML = y);
 
 //run
-doc('run').forEach(x => {
+allDoc('run').forEach(x => {
    var src = x.getAttribute('src');
    var name = x.getAttribute('name');
    if (name == undefined) {
@@ -59,7 +65,7 @@ doc('run').forEach(x => {
 });
 
 // w3CodeColor
-doc('pre').forEach(x => {
+allDoc('pre').forEach(x => {
    w3CodeColor(x, x.getAttribute('lang'));
 });
 function w3CodeColor(elmnt, mode) {
