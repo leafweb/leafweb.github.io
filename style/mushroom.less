@@ -1,36 +1,25 @@
-/********************
-   * -Mushroom- v1
-   * power by leafweb
-********************/
-
 .flex-center {
    display: inline-flex;
    flex-flow: row wrap;
    justify-content: center;
    align-items: center;
 }
-
 .bar {
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-between;
    align-items: center;
 }
-
 /* Shadow */
 .shadow(@d: #000, @a: 5px, @b: 5px, @c: 10px) {
    box-shadow: @a @b @c @d;
    transition: 0.3s;
 }
-
 .drop-shadow(@d: #000, @a: 5px, @b: 5px, @c: 10px) {
    filter: drop-shadow(@a @b @c @d);
    transition: 0.3s;
 }
-
-
 /* shapes */
-// rect 
 .rect(@a: 100px, @b: 200px, @c: @primary, @d: @on-primary, @e: 30px) {
    display: inline-flex;
    flex-flow: wrap row;
@@ -44,7 +33,6 @@
    color: @d;
    transition: 0.3s;
 }
-
 .square(@a: 200px, @b: @primary, @c: @on-primary, @d: 30px) {
    display: inline-flex;
    flex-flow: wrap row;
@@ -58,7 +46,6 @@
    color: @c;
    transition: 0.3s;
 }
-
 .circle(@a: 200px, @b: @primary, @c: @on-primary) {
    display: inline-flex;
    flex-flow: wrap row;
@@ -72,7 +59,6 @@
    color: @c;
    transition: 0.3s;
 }
-
 .scallop(@a: 200px, @b: @primary, @c: @on-primary) {
    display: inline-flex;
    flex-flow: wrap row;
@@ -99,7 +85,6 @@
       transform: rotate(-30deg);
    }
 }
-
 /* Button */
 .btn {
    all: unset;
@@ -120,12 +105,10 @@
       color: @on-primary-high;
    }
 }
-
 .full-btn {
    .btn;
    display: flex;
 }
-
 /* mark */
 mark {
    background: @primary;
@@ -135,7 +118,6 @@ mark {
    font-family: monospace;
    font-weight: bold;
 }
-
 /* pre */
 pre {
    background: #000;
@@ -170,7 +152,6 @@ pre {
       text-transform: uppercase;
    }
 }
-
 /* panel */
 .panel {
    background: @primary-low;
@@ -179,7 +160,6 @@ pre {
    box-sizing: border-box;
    color: @on-primary-low;
 }
-
 .warn-panel {
    background: @warn-low;
    border-right: 5px solid @warn;
@@ -187,7 +167,6 @@ pre {
    box-sizing: border-box;
    color: @on-warn-low;
 }
-
 /* hr */
 hr {
    height: 0;
@@ -195,7 +174,6 @@ hr {
    border-top: 5px solid @primary;
    border-radius: 5px;
 }
-
 /* run */
 run {
    display: block;
