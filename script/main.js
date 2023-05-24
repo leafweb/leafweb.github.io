@@ -23,25 +23,38 @@ function getTheme() {
 }
 getTheme()
 
-fetch('/data/header.xml')
-   .then(x => x.text())
-   .then(y => {
-      header.innerHTML = y;
-      doc('#toggle-theme').onclick = () => {
-         if (localStorage.getItem('theme') == 'light') {
-            setTheme('dark')
-         } else {
-            setTheme('light')
-         }
-      }
-      doc('#menu-bars').onclick = ()=>{
-         doc('#backdrop').classList.toggle('on');
-      }
-      doc('#backdrop').onclick = () => {
-         doc('#backdrop').classList.toggle('on');
-      }
-   })
+// fetch('/data/header.xml')
+//    .then(x => x.text())
+//    .then(y => {
+//       header.innerHTML = y;
+//       doc('#toggle-theme').onclick = () => {
+//          if (localStorage.getItem('theme') == 'light') {
+//             setTheme('dark')
+//          } else {
+//             setTheme('light')
+//          }
+//       }
+//       doc('#menu-bars').onclick = ()=>{
+//          doc('#backdrop').classList.toggle('on');
+//       }
+//       doc('#backdrop').onclick = () => {
+//          doc('#backdrop').classList.toggle('on');
+//       }
+//    })
 
+doc('#toggle-theme').onclick = () => {
+         if (localStorage.getItem('theme') == 'light') {
+         setTheme('dark')
+      } else {
+         setTheme('light')
+      }
+     }
+   doc('#menu-bars').onclick = ()=>{
+        doc('#backdrop').classList.toggle('on');
+    }
+    doc('#backdrop').onclick = () => {
+       doc('#backdrop').classList.toggle('on');
+    }
 
 
 
