@@ -80,6 +80,9 @@
          font-size: 14px;
          font-family: monospace;
          color: #26D962;
+         padding: 8px;
+         overflow-wrap: break-word;
+         white-space: wrap;
       }
       @keyframes tap {
          0% {
@@ -110,6 +113,8 @@
    <script>
       var p = document.querySelector('p');
       var href = window.location.href;
+      href = href.replace('http://','');
+      href = href.replace('https://','');
       p.innerHTML = 'صفحه ای با آدرس "' + href + '" وجود ندارد!';
       var body = document.body;
       var num = 300;
