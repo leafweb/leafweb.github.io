@@ -24,68 +24,143 @@
    <main>
       <div>
          <article>
-            <h1>سند معتبر HTML</h1>
-            <p>برای داشتن سند معتبر HTML باید موارد زیر را در سندمون داشته باشیم: </p>
-            <ol>
-               <li>&lt;DOCTYPE html></li>
-            </ol>
+            <h2><li>سند معتبر HTML</li></h2>
             <p>
                بیایید کم کم با قالب یک سند HTML آشنا شویم.
             </p>
             <p>
-               برای اینکه یک سند سالم بدون خطا داشته باشید باید یک سری کد ها رو اضافه کنید:
+               برای اینکه یک سند سالم بدون خطا داشته باشیم باید یک سری چیزها را به آن اضافه کنید:
             </p>
-            <h1>1: &lt;DOCTYPE html></h1>
+            <br>
+         </article>
+         <article>
+            <h2>1 : &lt;DOCTYPE html></h2>
             <pre lang="html">
 &lt;!DOCTYPE html></pre>
             <p>
                این کد را در اول سند خود قرار دهید تا اجرا کننده های آن متوجه بشوند که این سند یک نسخه از HTML است.
                <br>
-               از آنجایی که از نسخه آن نامی نبردیم، برنامه ای که فراره این سند را اجرا کند، نسخه آخر این سند را در نظر میگیرد. یعنی
+               از آنجایی که از نسخه آن نامی نبردیم، برنامه ای که قراره این سند را اجرا کند، آخر نسخه این HTML را در نظر میگیرد. یعنی
                <mark>HTML-5</mark>.
             </p>
-            <h1>2: &lt;html></h1>
+            <br>
+         </article>
+         <article>
+            <h2>2 : &lt;html></h2>
             <pre lang="html">
 &lt;!DOCTYPE html>
 &lt;html>
    &lt;!-- همه چیز اینجا قرار میگیرد -->
 &lt;/html></pre>
-            <p>همه‌ی کد های ما در این عنصر قرار میگیرد</p>
-            <h1>3: &lt;head> و &lt;body></h1>
+            <p>همه‌ی کد های ما در این عنصر قرار میگیرد.</p>
+            <p>درواقه عنصر html پدر تمام عنصر هاست.</p>
+            <br>
+         </article>
+         <article>
+            <h1>3 : &lt;head></h1>
             <pre lang="html">
 &lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
    &lt;!-- اطلاعاتی درباره سند -->
 &lt;/head>
-&lt;body>
-   &lt;!-- کد های سند -->
-&lt;/body>
 &lt;/html></pre>
             <p>
-               سر سندمون یا همان عنصر
-               <mark>head</mark>
-               محل قرار گیری اطلاعاتی درباره‌ی سند ما هستش:
+               عنصر 
+               <mark>head</mark> 
+               سر سندمون و 
+               محل قرار گیری اطلاعاتی درباره‌ی سند ما هستش
+            </p>
+            <p>
+               اطلاعاتی مانند:
+               <li>عنوان سند</li>
+               <li>نوع رمزنگاری متن سند</li>
+               <li>اندازه سند</li>
+               <li>سازگاری با مرورگر internet explorer</li>
+               <li>نویسنده سند</li>
+               <li>توضیحاتی درباره سند</li>
+               <li>لینک های استایل ها</li>
+               <li>خود استایل‌ها و اسکریپت‌ها</li>
+               <li>و کلی چیز دیگر</li>
             </p>
             <pre lang="html">
-&lt;title> title document &lt;/title>
-&lt;meta charset="UTF-8">
-&lt;meta name="viewport" content="width=device-width, initial-scale=1">
-&lt;link rel="stylesheet" href="../../fontawesome/css/all.css">
-&lt;script src="main.js">&lt;/script></pre>
+&lt;title> عنوان سند &lt;/title>
+&lt;meta charset="UTF-8"> &lt;!-- نوع رمزنگاری متن سند -->
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"> &lt;!-- اندازه سند -->
+&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"> &lt;!-- سازگاری با مرورگر internet explorer -->
+&lt;meta name="author" content="نویسنده سند">
+&lt;meta name="description" content="توضیحاتی درباره سند">
+&lt;link rel="stylesheet" href="path-to-style"> &lt;!-- لینک های استایل ها -->
+&lt;style>&lt;/style> &lt;!-- استایل‌ها -->
+&lt;script src="path-to-javascript">&lt;/script> &lt;!-- اسکریپت‌ها --> </pre>
             <p>
                اینها تگ هایی که معمولاً در عنصر <mark>head</mark> قرار می‌گیرد.
-               البته فقط اینها نیستند ! کلی چیز های دیگر هست که با آنها آشنا خواهید
+               البته فقط اینها نیستند ! کلی چیز های دیگر هست که با آنها آشنا خواهید.
             </p>
+            <p>شما حتماً در سند HTML خود حداقل اون سه خط اولی رو در قسمتسر سند داشته باشید.</p>
+            <p class="panel">اگر نوع رمزنگاری را مشخص نکنید، حروف فارسی و بسیاری از حروف غیر انگلیسی را نمایش نمیدهد</p>
+            <p class="panel">اگر اندازه مرورگر را مشخص نکنید، اندازه آن خودکار بر اساس اندازه کامپیوتر تنظیم میشود و این اندازه برای گوشی ها زیادی بزرگ هستش</p>
+            <br>
+         </article>
+         <article>
+            <h2>4 : &lt;body></h2>
+            <p>
+               عنصر <mark>body</mark> یا بدن سند، محل قرار گیری اطلاعات نمایشی هستش.
+               <br>
+               یعنی هرچی در این عنصر بنویسم مرورگر نمایش میدهد.
+            </p>
+            <pre lang="html">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+   &lt;title> عنوان سند &lt;/title>
+   &lt;meta charset="UTF-8">
+   &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+   &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
+&lt;/head>
+&lt;body>
+   &lt;h1> Hy guys &lt;h1>
+&lt;/body>
+&lt;/html></pre>
+            <br>
+         </article>
+         <article>
+            <h2>5 : lang</h2>
+            <p><mark>lang</mark> ویژگی عنصر <mark>html</mark> هستش و زبان سندمون را تعیین میکند.</p>
+            <pre lang="html">&lt;html lang="fa" dir="rtl">&lt;/html></pre>
+            <p>
+               عنصر <mark>dir</mark> مخفف direction و به معنی جهست هستش و سه مقدار میگیرید: 
+               <li>ltr: چپ به راست (left to right)</li>
+               <li>rtl: راست به چپ (right to left)</li>
+               <li>auto: خودکار</li>
+            </p>
+            <p>چون فارسی از چپ به راست هستش ما هم مقدار <mark>rtl</mark> براش درنظر گرفتیم.</p>
+            <p>کد زیر نمونه ای از یک سند HTML معتبر فارسی هستش:</p>
+            <pre lang="html">
+&lt;!DOCTYPE html>
+&lt;html lang="fa" dir="rtl">
+&lt;head>
+   &lt;title> عنوان سند &lt;/title>
+   &lt;meta charset="UTF-8">
+   &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+   &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
+&lt;/head>
+&lt;body>
+   &lt;h1> بیاید شروع کنیم &lt;h1>
+&lt;/body>
+&lt;/html></pre>
+            <br>
          </article>
          <hr>
-         <p>
-            به همین سادگی با نحو HTML آشنا شدید.
-         </p>
          <p>در آموزش بعد یاد میگیرید که چطور یه سند وب معتبر و خوانا برای مرورگر ها بسازید</p>
-         <a href="document.html" class="flex flex-left btn">
-            <div> <i class="fad fa-arrow-right"></i> سند معتبر HTML</div>
-         </a>
+         <div class="flex">
+            <a href="syntax.html" class="flex btn">
+               <div> <i class="fad fa-arrow-right"></i> نحو HTML </div>
+            </a>
+            <a href="text.html" class="flex btn">
+               <div> متن در HTML <i class="fad fa-arrow-left"></i></div>
+            </a>
+         </div>
       </div>
    </main>
    <aside></aside>
