@@ -84,6 +84,11 @@
          overflow-wrap: break-word;
          white-space: wrap;
       }
+      a{
+         all: unset;
+         color: #26D9D9;
+         text-decoration: underline;
+      }
       @keyframes tap {
          0% {
             top: -200px;
@@ -115,7 +120,7 @@
       var href = window.location.href;
       href = href.replace('http://','');
       href = href.replace('https://','');
-      p.innerHTML = 'صفحه ای با آدرس "' + href + '" وجود ندارد!';
+      p.innerHTML = 'صفحه ای با آدرس "' + href + '" وجود ندارد!' + '<br>' + 'لطفاً به <a href="https://leafweb.github.io"/>اینجا</a> بروید';
       var body = document.body;
       var num = 300;
       var dur = Math.floor(Math.random() * 3000 + 2000);
