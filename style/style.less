@@ -51,6 +51,11 @@
 
 @import url(mushroom.less);
 
+::selection{
+   background: @primary-opacity;
+   color: @on-primary;
+}
+
 *{
    user-select: none;
    -webkit-tap-highlight-color: #0000;
@@ -69,7 +74,7 @@ header{
    background: @primary-opacity;
    color: @on-primary;
    width: 100vw;
-   height: 60px;
+   height: 56px;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -80,8 +85,8 @@ header{
    top: 0;
    z-index: 1;
    &>div:not(#title,#backdrop,#menu){
-      width: 60px;
-      height: 60px;
+      width: 56px;
+      height: 56px;
       .flex-center;
    }
    &>#backdrop {
@@ -98,7 +103,10 @@ header{
          background: @backdrop;
       }
       &.on + #menu{
-         width: 50vw;
+         width: 80vw;
+         @media (min-width: 800px) {
+            width: 300px;
+         }
       }
    }
    &>#menu {
@@ -119,7 +127,7 @@ header{
    text-align: center;
 }
 main{
-   padding: 8px;
+   padding: 10px;
 }
 .welcome{
    font-size: 25px;
@@ -132,10 +140,16 @@ footer {
    background: #000;
    color: @primary;
    width: 100vw;
-   padding: 8px;
+   padding: 10px;
    box-sizing: border-box;
 }
 
 li::marker{
    content: "🍀";
+}
+ol>li{
+   all: revert;
+   &::marker{
+      all: revert;
+   }
 }

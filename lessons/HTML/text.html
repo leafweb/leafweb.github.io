@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+   <title>Leaf web</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="google-site-verification" content="fwmMk6czaeuG-_CQ7C03tM-hjA8iBFj9-kSihrEXS3Q">
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PNGV780VZ"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-8PNGV780VZ');
+   </script>
+   <!-- style -->
+   <link id="theme" rel="stylesheet" href="theme/light.css">
+   <link rel="stylesheet/less" href="../../style/style.less">
+   <script src="../../script/less.min.js"></script>
+</head>
+
+<body>
+   <header></header>
+   <main>
+      <div>
+         <center>
+            <h1>متن در HTML</h1>
+         </center>
+         <article>
+            <p>
+               متن ها جز مهمترین قسمت های یک وبسایته.
+               <br>
+               متن ها از قسمت های مختلفی ساخته شده است
+            </p>
+            <ul>
+               <li><mark>&lt;h1></mark> تا <mark>&lt;h6></mark> : عناوین</li>
+               <li><mark>&lt;p></mark> : پاراگراف متن</li>
+               <li><mark>&lt;i></mark> : متن کج</li>
+               <li><mark>&lt;em></mark> : متن کج به نشانه تاکید</li>
+               <li><mark>&lt;strong></mark> : متن پرنگ به نشانه اهمیت</li>
+               <li><mark>&lt;b></mark> : متن پررنگ</li>
+               <li><mark>&lt;strike></mark> : متن خط خورده</li>
+               <li><mark>&lt;del></mark> : متن خط خورده به نشانه حذف شده</li>
+               <li><mark>&lt;u></mark> : متن دارای زیر خط</li>
+               <li><mark>&lt;sub></mark> : پایی نویس</li>
+               <li><mark>&lt;sup></mark> : بالانویس</li>
+               <li><mark>&lt;blockquote></mark> : نقل قول بلند</li>
+               <li><mark>&lt;q></mark> : نقل قول کوتاه</li>
+               <li><mark>&lt;code></mark> : نمایش کدهای برنامه‌نویسی</li>
+               <li><mark>&lt;pre></mark> : نمایش متن به همان صورت که کد آن نوشته شده است</li>
+               <li><mark>&lt;br></mark> : خط جدید</li>
+               <li><mark>&lt;hr></mark> : خط افقی</li>
+            </ul>
+            <br>
+         </article>
+         <article>
+            <h2><li>عنوان‌ها</li></h2>
+            <p> عنوان‌ها به ترتیب <mark>h1</mark> تا <mark>h6</mark> به ترتیب از مهم ترین و بزرگ ترین به کوچکترین و کم ارزش ترین عنوان هستش. کد و پیشنامیش زیر کاملاً نمایانگر خواص این عناصر هستش.</p>
+            <pre lang="html">
+&lt;h1> عنوان اول &lt;/h1>
+&lt;h2> عنوان دوم &lt;/h2>
+&lt;h3> عنوان سوم &lt;/h3>
+&lt;h4> عنوان چهارم &lt;/h4>
+&lt;h5> عنوان پنجم &lt;/h5>
+&lt;h6> عنوان ششم &lt;/h6></pre>
+            <run name="عناوین" src="run/text-h.html"></run>
+            <br>
+         </article>
+         <article>
+            <h2><li>پاراگراف ها</li></h2>
+            <p>این عنصر برای نوشتن پاراگراف ها به کار میره</p>
+            <pre lang="html">
+&lt;p> یک پاراگراف ساده &lt;/p>
+&lt;p> یک پاراگراف دیگه &lt;/p>
+&lt;p> متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی متن آزمایشی &lt;/p></pre>
+            <run name="پاراگراف" src="run/text-p.html"></run>
+            <p>عنصر پاراگراف مانند اسمش در هنگام خروجی، یه خط جدید شروع میکنه به نوشتن.</p>
+            <p>با این قابلت در زبان <mark>CSS</mark> به طور کامل آشنا میشوید. فعلا در همین حد بدانید که به این عناصر، عناصر غیر خطی یا بلوکی میگوییم.</p>
+            <br>
+         </article>
+         <article>
+            <h2><li>سبک  دهی به متن‌ها</li></h2>
+            <p> این عناصری که در کد زیر مشاهده میکنید، هرکدام سبک خاصی به متن میدهد. </p>
+            <pre lang="html">
+&lt;body dir="rtl">
+   &lt;b> پرنگ &lt;/b>
+   &lt;strong> مهم &lt;/strong>
+   &lt;i> کج &lt;/i>
+   &lt;em> تاکید &lt;/em>
+   &lt;u> زیر خط &lt;/u>
+   &lt;del> حذف شده &lt;/del>
+   &lt;strike> خط خورده &lt;/strike>
+   &lt;sub> بالانوبس &lt;/sub>
+   &lt;sup> پایین نویس &lt;/sup>
+   &lt;q> نقل قول خطی &lt;/q>
+   &lt;blockquote> نقل قول بلوکی &lt;/blockquote>
+   &lt;code> console.log('hello'); &lt;/code>
+   &lt;pre>
+متن      به
+هر شکل
+که
+کد آن را        نوشتم
+   &lt;/pre>
+&lt;/body>
+</pre>
+            <run name="عناصر متنی دیگر" src="run/text-other-element.html"></run>
+            <p> همان طور که مشاهده میکنید، بعضی از این عناصر خطی و بعضی هاشونم بلوکی.</p>
+            <br>
+         </article>
+         <article>
+            <h2>4 : <mark>&lt;br></mark> و <mark>&lt;hr></h2>
+            <p>این عنصر برای نمایش قسمت های مهم متن به کار میرود و آن را bold میکند</p>
+            <p> اگر یادتان باشد گفته بودم که این دو عنصر، تگ پایانی ندارد!</p>
+            <pre lang="html">
+&lt;p> سلام من یه پاراگرف هستم! &lt;br> که الان اومدم تو یه خط جدید. &lt;/p>
+&lt;br>
+&lt;p> اینم یک خط افقی &lt;/p>
+&lt;hr></pre>
+            <run name="br و hr" src="run/text-br-hr.html"></run>
+         </article>
+         <hr>
+         <p> خب حالا که با متن و قسمت های مختلف اون آشنا شدیم، وقتشه که سراغ چیز های مهمتر HTML برویم <br> در مطلب بعدی با لینک ها در وب آشنا میشویم! </p>
+         <div class="flex">
+            <a href="syntax.html" class="flex btn">
+               <div> <i class="fad fa-arrow-right"></i> سند معتبر HTML </div>
+            </a>
+            <a href="text.html" class="flex btn">
+               <div> لینک ها <i class="fad fa-arrow-left"></i></div>
+            </a>
+         </div>
+      </div>
+      </div>
+   </main>
+   <aside></aside>
+   <footer></footer>
+   <script src="../../script/main.js"></script>
+</body>
+
+</html>

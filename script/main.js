@@ -57,7 +57,7 @@ fetch('/data/footer.xml')
 .then(x => x.text())
 .then(y=> footer.innerHTML = y);
 
-//run
+// run
 allDoc('run').forEach(x => {
    var src = x.getAttribute('src');
    var name = x.getAttribute('name');
