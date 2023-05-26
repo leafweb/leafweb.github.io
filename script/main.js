@@ -25,7 +25,13 @@ function getTheme() {
 }
 getTheme();
 
-
+window.onscroll = ()=>{
+   if (window.scrollY === 0) {
+      header.classList.remove('on');
+   } else {
+      header.classList.add('on');
+   }
+}
 
 fetch('/data/header.xml')
 .then(x => x.text())
