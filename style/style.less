@@ -47,6 +47,7 @@
 @on-warn-high: var(--on-warn-high);
 @backdrop: var(--backdrop);
 @background: var(--background);
+@background-image: var(--background-image);
 @on-background: var(--on-background);
 
 @import url(mushroom.less);
@@ -65,7 +66,8 @@
 body {
    margin: 0;
    padding: 0;
-   background: @background;
+   background-size: cover;
+   background: @background @background-image;
    color: @on-background;
    min-width: 100vw;
    min-height: 100vh;
@@ -152,4 +154,7 @@ ol>li{
    &::marker{
       all: revert;
    }
+}
+.bg{
+   
 }

@@ -33,5 +33,6 @@
    
    --backdrop: hsla(140, 100%, 90%, 0.2);
    --background: hsla(140, 100%, 5%, 1);
+   --background-image: url(/theme/dark-bg.png);
    --on-background: hsla(140, 90%, 80%, 1);
 }

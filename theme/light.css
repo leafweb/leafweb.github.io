@@ -32,6 +32,7 @@
    --on-warn-high: hsla(50, 100%, 80%, 1);
    
    --backdrop: hsla(140, 100%, 10%, 0.7);
-   --background: hsla(140, 90%, 95%, 1);
+   --background: #fff;
+   --background-image: url(/theme/light-bg.png);
    --on-background: hsla(160, 90%, 0%, 1);
 }
