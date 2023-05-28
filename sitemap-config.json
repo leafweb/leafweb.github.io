@@ -1,20 +1,8 @@
 {
-"hostname": "https://leafweb.github.io",
+  "hostname": "https://leafweb.github.io",
   "urls": [
-    {
-      "url": "/",
-      "priority": 1.0,
-      "changefreq": "daily"
-    },
-    {
-      "url": "/about",
-      "priority": 0.8,
-      "changefreq": "weekly"
-    },
-    {
-      "url": "/contact",
-      "priority": 0.5,
-      "changefreq": "monthly"
-    }
+    { "url": "/", "changefreq": "monthly", "priority": 1 },
+    { "url": "/about", "changefreq": "monthly", "priority": 0.8 },
+    { "url": "/contact", "changefreq": "monthly", "priority": 0.8 }
   ]
 }
