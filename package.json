@@ -1,0 +1,5 @@
+"scripts": {
+  "install": "npm install",
+  "install-mongodb": "npm install mongodb",
+  "install-node": "npm install node"
+}
