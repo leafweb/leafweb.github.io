@@ -7,7 +7,6 @@ body {
    position: fixed;
    background: url(/image/leaf-100px.png);
    background-size: cover;
-   opacity: 0.5;
 }
 #container {
    position: fixed;
