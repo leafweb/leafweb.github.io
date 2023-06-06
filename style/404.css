@@ -3,20 +3,17 @@ body {
    padding: 0;
    background: #000;
 }
-#center(){
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
-.leaf{
+.leaf {
    position: fixed;
    background: url(/image/leaf-100px.png);
    background-size: cover;
    opacity: 0.5;
 }
 #container {
-   #center();
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    flex-flow: wrap row;
    justify-content: center;
    align-items: center;
@@ -26,25 +23,28 @@ body {
    z-index: 1;
    background: #26D962;
    animation: rotate 20s linear infinite;
-   &::before,
-   &::after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: 180px;
-      aspect-ratio: 1 / 1;
-      border-radius: calc(180px/6);
-      background: #26D962;
-   }
-   &::before {
-      transform: rotate(-60deg);
-   }
-   &::after {
-      transform: rotate(-30deg);
-   }
+}
+#container::before,
+#container::after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   width: 180px;
+   aspect-ratio: 1 / 1;
+   border-radius: calc(180px/6);
+   background: #26D962;
+}
+#container::before {
+   transform: rotate(-60deg);
+}
+#container::after {
+   transform: rotate(-30deg);
 }
 #in {
-   #center();
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    font-size: 60px;
    font-family: monospace;
    font-weight: bold;
@@ -67,25 +67,22 @@ a {
    all: unset;
    color: #26D9D9;
    text-decoration: none;
-   &:hover {
-      color: #D92626;
-   }
 }
-
+a:hover {
+   color: #D92626;
+}
 @keyframes top {
    0% {
       top: -200px;
       filter: hue-rotate(100deg);
       transform-origin: top left;
    }
-
    100% {
       top: 100%;
       filter: hue-rotate(0deg);
       transform-origin: bottom right;
    }
 }
-
 @keyframes rotateLeft {
    0% {
       transform: rotate(0deg) rotateY(0deg);
@@ -106,12 +103,10 @@ a {
       transform-origin: bottom right;
    }
 }
-
 @keyframes rotate {
    0% {
       transform: translate(-50%, -50%) rotate(0deg);
    }
-
    100% {
       transform: translate(-50%, -50%) rotate(360deg);
    }
