@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
-
-<head lang="fa" dir="rtl">
+<html lang="fa" dir="rtl">
+<head>
    <title>404</title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,128 +16,13 @@
    </script>
    <!-- style -->
    <link rel="shortcut icon" href="/image/icon-500px.png" type="image/x-icon" />
-   <style>
-      body {
-         margin: 0;
-         padding: 0;
-         background: #000 url(/theme/dark-bg.png);
-      }
-      .e{
-         position: fixed;
-         background: url(/image/icon-100px.png);
-         background-size: cover;
-         opacity: 0.5;
-      }
-      #container {
-         position: fixed;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         display: inline-flex;
-         flex-flow: wrap row;
-         justify-content: center;
-         align-items: center;
-         width: 180px;
-         aspect-ratio: 1 / 1;
-         border-radius: calc(180px/6);
-         z-index: 1;
-         background: #26D962;
-         animation: rotate 10s linear infinite;
-      }
-      #container::before,
-      #container::after {
-         content: "";
-         position: absolute;
-         z-index: -1;
-         width: 180px;
-         aspect-ratio: 1 / 1;
-         border-radius: calc(180px/6);
-         background: #26D962;
-      }
-      #container::before {
-         transform: rotate(-60deg);
-      }
-      #container::after {
-         transform: rotate(-30deg);
-      }
-      #in{
-         position: fixed;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         font-size: 60px;
-         font-family: monospace;
-         font-weight: bold;
-         color: #000;
-         z-index: 9;
-      }
-      p {
-         text-align: center;
-         width: 100vw;
-         position: fixed;
-         bottom: 0;
-         font-size: 14px;
-         font-family: monospace;
-         color: #26D962;
-         padding: 8px;
-         overflow-wrap: break-word;
-         white-space: wrap;
-      }
-      a{
-         all: unset;
-         color: #26D9D9;
-         text-decoration: none;
-      }
-      a:hover{
-         color: #D92626;
-      }
-      @keyframes tap {
-         0% {
-            top: -200px;
-            filter: hue-rotate(0deg);
-            transform: rotate(0deg);
-         }
-         100% {
-            top: 100%;
-            filter: hue-rotate(100deg);
-            transform: rotate(360deg);
-         }
-      }
-      @keyframes rotate {
-         0% {
-            transform: translate(-50%, -50%) rotate(0deg);
-         }
-         100% {
-            transform: translate(-50%, -50%) rotate(360deg);
-         }
-      }
-   </style>
+   <link rel="stylesheet/less" href="style/404.less">
+   <script src="script/less.min.js"></script>
 </head>
 <body>
    <div id="container"></div>
    <div id="in">404</div>
    <p dir="rtl"></p>
-   <script>
-      var p = document.querySelector('p');
-      var href = window.location.href;
-      href = href.replace('http://','');
-      href = href.replace('https://','');
-      p.innerHTML = 'صفحه ای با آدرس "' + href + '" وجود ندارد!' + '<br>' + 'لطفاً به <a href="https://leafweb.github.io"/>این آدرس</a> بروید';
-      var body = document.body;
-      var num = 300;
-      var dur = Math.floor(Math.random() * 3000 + 2000);
-      var delay = Math.floor(Math.random() * 2000);
-      setInterval(() => {
-         var div = document.createElement("div");
-         body.appendChild(div);
-         div.classList.add("e");
-         div.style.left = Math.random() * Number(window.innerWidth) + "px";
-         div.style.padding = Math.random() * 40 + 5 + "px";
-         div.style.animation = "tap " + dur + "ms both ease-in " + delay + "ms";
-         setTimeout(() => {
-            div.remove();
-         }, delay + dur);
-      }, num);
-   </script>
+   <script src="/script/404.js"></script>
 </body>
 </html>

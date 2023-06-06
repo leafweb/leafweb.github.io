@@ -1,0 +1,118 @@
+body {
+   margin: 0;
+   padding: 0;
+   background: #000;
+}
+#center(){
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.leaf{
+   position: fixed;
+   background: url(/image/leaf-100px.png);
+   background-size: cover;
+   opacity: 0.5;
+}
+#container {
+   #center();
+   flex-flow: wrap row;
+   justify-content: center;
+   align-items: center;
+   width: 180px;
+   aspect-ratio: 1 / 1;
+   border-radius: calc(180px/6);
+   z-index: 1;
+   background: #26D962;
+   animation: rotate 20s linear infinite;
+   &::before,
+   &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 180px;
+      aspect-ratio: 1 / 1;
+      border-radius: calc(180px/6);
+      background: #26D962;
+   }
+   &::before {
+      transform: rotate(-60deg);
+   }
+   &::after {
+      transform: rotate(-30deg);
+   }
+}
+#in {
+   #center();
+   font-size: 60px;
+   font-family: monospace;
+   font-weight: bold;
+   color: #000;
+   z-index: 9;
+}
+p {
+   text-align: center;
+   width: 100vw;
+   position: fixed;
+   bottom: 0;
+   font-size: 14px;
+   font-family: monospace;
+   color: #26D962;
+   padding: 8px;
+   overflow-wrap: break-word;
+   white-space: wrap;
+}
+a {
+   all: unset;
+   color: #26D9D9;
+   text-decoration: none;
+   &:hover {
+      color: #D92626;
+   }
+}
+
+@keyframes top {
+   0% {
+      top: -200px;
+      filter: hue-rotate(100deg);
+      transform-origin: top left;
+   }
+
+   100% {
+      top: 100%;
+      filter: hue-rotate(0deg);
+      transform-origin: bottom right;
+   }
+}
+
+@keyframes rotateLeft {
+   0% {
+      transform: rotate(0deg) rotateY(0deg);
+      transform-origin: top left;
+   }
+   100% {
+      transform: rotate(-360deg) rotateY(180deg);
+      transform-origin: bottom right;
+   }
+}
+@keyframes rotateRight {
+   0% {
+      transform: rotate(0deg) rotateY(0deg);
+      transform-origin: top left;
+   }
+   100% {
+      transform: rotate(360deg) rotateY(180deg);
+      transform-origin: bottom right;
+   }
+}
+
+@keyframes rotate {
+   0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+   }
+
+   100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+   }
+}
