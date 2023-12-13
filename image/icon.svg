@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+   <g>
+      <rect id="SvgRact" fill="hsl(90,50%,40%)" x="150" y="150" width="700" height="700" rx="130" />
+      <use href="#SvgRact" transform="rotate(30 500 500)" />
+      <use href="#SvgRact" transform="rotate(60 500 500)" />
+      <animateTransform attributeName="transform" type="rotate" from="0 500 500" to="360 500 500" dur="30s" repeatCount="indefinite" />
+   </g>
+   <path fill="hsl(90,50%,95%)" transform="scale(0.8)translate(125,160)" d="M 500 700 C 300 700 200 500 50 400 C 250 350 400 400 500 600 C 600 400 750 350 950 400 C 800 500 700 700 500 700z M 500 700 C 200 700 350 300 500 100 C 650 300 800 700 500 700z M 480 680 L 520 680 Q 520 860 400 800 C 460 820 480 820 480 680z" />
+</svg>
