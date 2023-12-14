@@ -268,7 +268,7 @@ main section article > div div {
   align-items: center;
 }
 @media screen and (min-width: 550px) {
-  section:nth-child(2) {
+  section:nth-child(1) {
     flex-flow: row-reverse wrap !important;
   }
 }
