@@ -1,18 +1,18 @@
 @font-face {
   font-family: "JetBrainsMono";
-  src: url(http://localhost:7700/style/font/JetBrainsMono.ttf);
+  src: url(style/font/JetBrainsMono.ttf);
 }
 @font-face {
   font-family: "VazirCode";
-  src: url(http://localhost:7700/style/font/VazirCode.ttf);
+  src: url(style/font/VazirCode.ttf);
 }
 @font-face {
   font-family: "NotoEmoji";
-  src: url(http://localhost:7700/style/font/NotoEmoji.ttf);
+  src: url(style/font/NotoEmoji.ttf);
 }
 @font-face {
   font-family: "mds";
-  src: url("http://localhost:7700/style/font/mds.woff2") format("woff2");
+  src: url("style/font/mds.woff2") format("woff2");
 }
 * {
   -webkit-tap-highlight-color: #0000;
