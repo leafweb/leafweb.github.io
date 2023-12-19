@@ -10,6 +10,7 @@ M.setDarkmode(mode);
 M.setPalette("true");
 M.setReversePalette("false");
 M.setColorScheme("Monochromatic");
+TC.setAttribute('content',M.themeColor.surface);
 function Darkmode() {
    M.toggleMode();
    localStorage.setItem('darkmode', M.darkmode);
